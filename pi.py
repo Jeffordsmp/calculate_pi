@@ -15,7 +15,6 @@ n = 1000000
 
 # Variables counting points inside the circle vs outside
 inside = 0
-points = 0
 
 # Simple loop
 i = 0
@@ -35,15 +34,12 @@ while i < n:
         # if the point is inside the circle add to the inside variable
         inside += 1
 
-    # all of the points will be counted
-    points +=1
-
 # area of a circle = (inside/points) * 4
 # area of a circle = Pi * (r * r)
 # if r = 1 then circle = Pi * 1 = Pi
 # 4(inside/points)=Pi
 
-area = inside/points
+area = inside/n
 pi = area * 4
 
 print(pi)
